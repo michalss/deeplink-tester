@@ -6,10 +6,18 @@
     <title>Deep Link tester Android</title>
   </head>
   <body>
-    <button id="start">Start</button>
+    <button hidden id="start">Start</button><br /><br />
     <a
       href="vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       >Start VLC no params</a
+    >
+    <a
+      href="jvp://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4?position=120"
+      >Start JVP no params A</a
+    >
+    <a
+      href="com.brouken.player://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4?position=120"
+      >Start JVP no params B</a
     >
 
     <script>
