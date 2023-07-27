@@ -6,18 +6,20 @@
     <title>Deep Link tester Android</title>
   </head>
   <body>
-    <!-- <button id="start">Start</button> -->
+    <button id="start">Start</button>
     <a
       href="vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       >Start VLC no params</a
     >
 
     <script>
-      const url = "https://samplelib.com/lib/preview/mp4/sample-15s.mp4";
+      const url =
+        "vlc://http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
       const button = document.getElementById("start");
-      //   button.addEventListener("click", (e) => {
-      //     console.log("Start");
-      //   });
+      button.addEventListener("click", (e) => {
+        console.log("Start");
+        window.location.href = url;
+      });
     </script>
   </body>
 </html>
